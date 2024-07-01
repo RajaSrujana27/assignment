@@ -21,7 +21,7 @@ body, html {
         "feature1"
         "feature2"
         "feature3";
-    grid-gap: 10px;
+    grid-gap: 0px;
     padding: 10px;
 }
 
