@@ -1,0 +1,92 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "content"
+        "sign-up"
+        "feature1"
+        "feature2"
+        "feature3";
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.header {
+    grid-area: header;
+    background-color: #6ec1e4;
+    padding: 20px;
+    text-align: center;
+}
+
+.content {
+    grid-area: content;
+    background-color: #e1e1e1;
+    padding: 20px;
+    text-align: center;
+}
+
+.sign-up {
+    grid-area: sign-up;
+    background-color: #b3d4fc;
+    padding: 20px;
+    text-align: center;
+}
+
+.feature {
+    background-color: #f9cb9c;
+    padding: 20px;
+    text-align: center;
+}
+
+.feature1 {
+    grid-area: feature1;
+}
+
+.feature2 {
+    grid-area: feature2;
+    background-color: rgb(228, 109, 127);
+   
+}
+
+.feature3 {
+    grid-area: feature3;
+    background-color: plum;
+}
+
+/* Tablet Layout */
+@media (min-width: 600px) {
+    .container {
+        grid-template-areas:
+            "header header"
+            "content content"
+            "sign-up feature1"
+            "feature2 feature3";
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Desktop Layout */
+@media (min-width: 900px) {
+    .container {
+        grid-template-areas:
+            "header header header"
+            "feature1 feature3 feature2"
+            "sign-up sign-up sign-up"
+            "content content content";
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
