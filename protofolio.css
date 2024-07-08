@@ -532,12 +532,26 @@
       margin: 0 5rem;
     }
   }
-  @media(max-width:890px){
+  @media(max-width:990px){
     header{
       padding: 2 rem 3%;
     }
     section{
       padding: 10 rem 3% 2rem ;
+    }
+    .tiimeline-items::before{
+      left:7px;
+    }
+    .timeline-item:nth-child(odd){
+      padding-right: 0;
+      text-align: left;
+    }
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even){
+      padding-left: 37px;
+    }
+    .timeline-dot{
+      left: 0;
     }
     .skills{
       padding-bottom: 7rem;
@@ -546,23 +560,26 @@
       padding: 2rem 3%;
     }
   }
-  @media(max-width:700px){
+  @media(max-width:500px){
     #menu-icon{
       display:block;
     }
     .navbar{
       position: absolute;
-      top: 100%;
+      top: 60%;
       right: 0;
-      width: 50%;
-      padding: 1rem 3%;
+      width: 40%;
+      padding: 1rem 4%;
       background: black;
       backdrop-filter: blur(2opx);
       border-bottom-left-radius: 1rem;
       border-left:1px solid var(--main-color);
       border-bottom: 2px solid var(--main-color);
-      display:flex;
+      display:block;
       float: left;
+    }
+    .menu:hover{
+     transform: 1.2 ease in-out;
     }
    .navbar.active{
     display: block;
@@ -574,7 +591,7 @@
     color: white;
   }
   .home{
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin: 5rem 4rem;
   }
   .home-content h3{
