@@ -1,9 +1,9 @@
 // Declare variables of different data types
-var str = "Hello, World!";
-var num = 42;
-var bool = true;
-var undef;
-var nll = null;
+let str = "Hello, World!";
+let num = 42;
+let bool = true;
+let undef;
+let nll = null;
 
 // Print each variable and its type using console.log and the typeof operator
 console.log("Value: " + str + ", Type: " + typeof str);
@@ -13,8 +13,8 @@ console.log("Value: " + undef + ", Type: " + typeof undef);
 console.log("Value: " + nll + ", Type: " + typeof nll); // Note: typeof null is 'object'
 
 // Mathematical Operators
-var a = 10;
-var b = 5;
+let a = 10;
+let b = 5;
 
 console.log("Addition: " + (a + b));
 console.log("Subtraction: " + (a - b));
