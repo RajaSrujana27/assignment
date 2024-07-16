@@ -12,23 +12,25 @@ for (let i = 1; i <= 50; i++) {
 }
 console.log(`Sum of even numbers between 1 and 50 is ${sumEven}`);
 
-// Function to check if a number is prime
-function isPrime(num) {
-    if (num <= 1) return false;
-    for (let i = 2; i <= Math.sqrt(num); i++) {
-        if (num % i === 0) return false;
-    }
-    return true;
-}
-
-// Countdown Timer: Prime numbers from 2 to 20
+// Countdown Timer: Prime numbers from 2 to 20 using only while loop
 let num = 2;
+
 while (num <= 20) {
-    if (isPrime(num)) {
+    let isPrime = true;
+    let i = 2;
+    while (i <= Math.sqrt(num)) {
+        if (num % i === 0) {
+            isPrime = false;
+            break;
+        }
+        i++;
+    }
+    if (isPrime) {
         console.log(num);
     }
     num++;
 }
+
 
 // Sum of odd numbers between 1 and 20
 let sumOdd = 0;
@@ -44,10 +46,10 @@ console.log(`Sum of odd numbers between 1 and 20 is ${sumOdd}`);
 // Factorial Calculation
 let number = 5; // You can change this number to calculate the factorial of a different number
 let factorial = 1;
-let i = number;
-while (i > 0) {
-    factorial *= i;
-    i--;
+let k = number;
+while (k > 0) {
+    factorial *= k;
+    k--;
 }
 console.log(`Factorial of ${number} is ${factorial}`);
 /**
