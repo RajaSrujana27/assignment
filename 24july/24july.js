@@ -58,3 +58,17 @@ function findIndexYoungerThan18(people) {
 
 const indexYoungerThan18 = findIndexYoungerThan18(people);
 console.log('Index of first person younger than 18:', indexYoungerThan18);
+/***
+ * OUTPUT:
+ * -------
+1
+2
+3
+4
+5
+[ 2, 4, 6, 8, 10 ]
+Even numbers: [ 2, 4, 6, 8, 10 ]
+Sum of numbers: 55
+First person older than 25: Alekhya
+Index of first person younger than 18: -1
+ */

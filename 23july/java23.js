@@ -57,7 +57,21 @@ console.log(first);
 console.log(second); 
 console.log(rest); 
 
-
+/****
+ * output:
+  Original Object: { name: 'Srujana', address: { city: 'Amalapuram', zip: '54321' } }
+Shallow Copy using Object.assign: { name: 'Srujana', address: { city: 'Amalapuram', zip: '54321' } }
+Shallow Copy using spread operator: { name: 'Srujana', address: { city: 'Amalapuram', zip: '54321' } }
+Original Object: { name: 'sai', address: { city: 'Nizampet', zip: '94101' } }
+Deep Copy: { name: 'sai', address: { city: 'chintal', zip: '98101' } }
+[ 1, 2, 3, 4, 5, 6 ]
+{ a: 1, b: 2, c: 3, d: 4 }
+6
+22
+17
+10
+20
+ */
 
 
 
