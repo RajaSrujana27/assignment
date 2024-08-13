@@ -1,4 +1,4 @@
-localStorage.setItem('mykey', 'myValue');
+localStorage.setItem('myKey', 'myValue');
 let value = localStorage.getItem('myKey');
 console.log(value); 
 sessionStorage.setItem('mySessionKey','mySessionValue');
